@@ -1,0 +1,399 @@
+body
+	font-size 16Px
+
+.mobile-wrap
+	position relative
+.step-one
+	min-height 100vh
+	display flex
+	flex-direction column
+	justify-content space-between
+	.header
+		text-align center
+		background #ba0001
+		height 300px
+		display flex
+		align-items center
+		flex-direction column
+		justify-content center
+		h1
+			font-size 64px
+			color #ffffff
+			font-weight bold
+			line-height 1
+		h2
+			padding 25px 0
+			font-size 28px
+			color #ffffff
+			line-height 1
+		a
+			display block
+			font-size 43px
+			color #ba0001
+			background #ffffff
+			padding 0 20px
+			height 40px
+			text-align center
+			line-height 40px
+			font-size 26px
+			border-radius 20px
+	.main
+		display flex
+		flex-direction column
+		width 568px
+		margin 0 auto
+		&.w100
+			width 100%
+		.add-source
+			padding-left 70px
+			background url('../img/c51883d53cc91c59f87f26ae862b6076-48+48.png') left center/48px auto no-repeat
+			line-height 72px
+			height 72px
+			border-bottom 1px solid #c9c9c9
+			box-sizing content-box
+			font-size 32px
+			&+.add-source
+				margin-top 80px
+		.start
+			width 240px
+			height 74px
+			font-size 40px
+			color #ffffff
+			background #ba0001
+			border-radius 10px
+			text-align center
+			line-height 74px
+			margin 60px auto
+		.make-list
+			width 322px
+			height 104px
+			box-sizing content-box
+			border 1px solid #e4e4e4
+			text-align center
+			margin 0 auto
+			span
+				display inline-block
+				height 100%
+				font-size 40px
+				color #8d8d8d
+				padding-left 80px
+				background url('../img/3243cd8aac355641dc1d740fbe6a383e-52+54.png') left center/52px auto no-repeat
+				margin 0 auto
+				line-height 104px
+		.list
+			padding 0 60px
+			width 100%
+			box-sizing border-box
+			.list-title
+			.list-item
+				display flex
+				justify-content space-between
+				align-items center
+				font-size 20px
+				color #666666
+				line-height 80px
+				.item
+					text-align center
+					white-space nowrap
+					text-overflow ellipsis
+					overflow hidden
+					&.fw
+						font-weight bold
+						span
+							font-size 20px
+					&:nth-child(1)
+						flex 0 0 30%
+						text-align left
+						font-size 27px
+					&:nth-child(2)
+						flex 0 0 25%
+					&:nth-child(3)
+						flex 0 0 25%
+					&:nth-child(4)
+						flex 0 0 10%
+					&:nth-child(5)
+						flex 0 0 10%
+			.list-item
+				.item
+					&:nth-child(2)
+					&:nth-child(3)
+						font-size 12px
+					.play
+					.add
+						height 100%
+						width 100%	
+						height 80px
+						display block
+					.play
+						background url('../img/6ddd3c2f5fe59c079141d3d936872ebd-37+37.png') center center /37px auto no-repeat
+						&:hover
+						&.active
+							background-image url('../img/9fc89a6789b4c5d9aa31d6ae70c64a2f-35+35.png')
+					.add
+						background url('../img/ac4fbdfe3f95a19bf6badf9b46bdb43d-34+34.png') center center /37px auto  no-repeat
+						&:hover
+						&.active
+							background-image url('../img/30c56c742180765277636dc294b5bf57-34+35.png')
+						
+.footer
+	height 200px
+	background #f5f5f5
+	display flex
+	align-items center
+	justify-content center
+	flex-direction column
+	&.h260
+		height 260px
+		border-top 1px solid #d2d2d2
+.player
+	display flex
+	align-items center
+	justify-content center
+	position relative
+	.play-btn
+		width 98px
+		height 98px
+		background url('../img/8adc23b4e746c0ae583e233aacfcae94-97+97.png') center center /100% 100% no-repeat
+	.timer
+		font-size 24px
+		color #000000
+		line-height 1
+		margin 0
+	.progress
+		position relative
+		margin 0 20px
+		width 340px
+		height 3px
+		background #d2d2d2
+		&.w420
+			width 420px
+		span
+			position absolute
+			top -5px
+			bottom -5px
+			border-radius 6.5px
+			left 0
+			background #ba0001
+			width 20px
+	.tips
+		position absolute
+		bottom -30px
+		line-height 1
+		transform translateY(100%)
+		font-size 20px
+		color #636363
+		line-height 1
+.play-control
+	display flex
+	align-items center
+	padding-top 60px
+	.pre
+		width 47px
+		height 47px
+		background url('../img/4d887f02960302c71bc452b2986d0c10-47+27.png') center center /47px auto no-repeat
+	.next
+		width 47px
+		height 47px
+		background url('../img/c866b255433dcc9459e36673920cbde5-47+27.png') center center /47px auto no-repeat
+	.play-btn
+		margin 0 80px
+		width 98px
+		height 98px
+		background url('../img/8adc23b4e746c0ae583e233aacfcae94-97+97.png') center center /100% 100% no-repeat
+
+.add-music
+	background #ba0001
+	h3
+		color #ffffff
+	button 
+		background #ffffff
+		color #ba0001
+
+.ovs-container
+	overflow scroll
+	height calc(100vh - 83px - 260px - 138px)
+	&::-webkit-scrollbar
+		display none
+
+div.layout
+	position fixed
+	top 0
+	left 0
+	right 0
+	bottom 0
+	width 100%
+	height 100%
+	background #ffffff
+	display none
+
+.download-block
+	min-height 100vh
+	background #f4f2f2
+	.top-block
+	.bottom
+		h2
+			font-size 36px
+			color #ffffff
+			line-height 90px
+			text-align center
+			background #ba0001
+		.ads
+			img
+				display block
+				width 100%
+		.btn-group
+			height 90px
+			display flex
+			align-items center
+			justify-content space-around
+			a
+				display block
+				font-size 24px
+				color #ffffff
+				width 160px
+				height 54px
+				text-align center
+				line-height 54px
+				background #ba0001
+				border-radius 5px
+	.list
+		padding 0 60px
+		.row
+			display flex
+			justify-content flex-start
+			.item
+				margin 0
+				text-align center
+				font-size 13px
+				color #696868
+				height 70px
+				line-height 70px
+				display flex
+				align-items center
+				justify-content center
+				white-space nowrap
+				text-overflow ellipsis
+				overflow hidden
+				&.tal
+					text-align left
+					justify-content flex-start
+				.play
+					display block
+					width 28px
+					height 28px
+					background url('../img/6ddd3c2f5fe59c079141d3d936872ebd-37+37.png') center center/100% 100% no-repeat
+					transition 0.3s
+					&:hover
+					&.active
+						background-image url('../img/9fc89a6789b4c5d9aa31d6ae70c64a2f-35+35.png')
+				.down-load
+					display block
+					width 28px
+					height 28px
+					background url('../img/72173f796a1b354fdef4faab96e25101-24+21.png') center center/100% 100% no-repeat
+					transition 0.3s
+					&:hover
+					&.active
+						background-image url('../img/60b930188aade596a22f117c4bebe174-24+21.png')
+				&.fb
+					font-size 16px
+					font-weight bold
+				&:nth-child(1)
+					flex 0 0 280px
+				&:nth-child(2)
+					flex 0 0 140px
+				&:nth-child(3)
+					flex 0 0 100px
+				&:nth-child(4)
+					flex 0 0 100px
+	.ovs
+		overflow scroll
+		height calc(100vh - 726px)
+		&::-webkit-scrollbar
+			display none
+
+
+
+.download-block-pc
+	background #f5f5f5
+	min-height 100vh
+	.w
+		width 1168Px
+		margin 0 auto
+	h2
+		font-size 47Px
+		color #ffffff
+		background #ba0001
+		line-height 80Px
+		text-align center
+	.ads
+		a
+		img
+			display block
+			width 100%
+	.btn-group
+		padding 10Px 0
+		overflow hidden
+		background #f4f4f4
+		a
+			float left
+			padding 0 10Px
+			width 130Px
+			height 44Px
+			background #ba0001
+			color #ffffff
+			font-size 26Px
+			text-align center
+			border-radius 5Px
+			line-height 44Px
+			margin-left 104Px
+	.table
+		width 100%
+		background #ffffff
+		th
+		td
+		tr
+			font-size 17Px
+			text-align center
+			color #696868
+			border-bottom 1px solid #e2e2e2
+		td
+		th
+			padding 20Px
+		
+		.play
+			display block
+			margin 0 auto
+			width 35Px
+			height 35Px
+			background url('../img/6ddd3c2f5fe59c079141d3d936872ebd-37+37.png') center center/100% 100% no-repeat
+			transition 0.3s
+			&:hover
+			&.active
+				background-image url('../img/9fc89a6789b4c5d9aa31d6ae70c64a2f-35+35.png')
+		.down-load
+			display block
+			width 31Px
+			height 28Px
+			margin 0 auto
+			background url('../img/72173f796a1b354fdef4faab96e25101-24+21.png') center center/100% 100% no-repeat
+			transition 0.3s
+			&:hover
+			&.active
+				background-image url('../img/60b930188aade596a22f117c4bebe174-24+21.png')
+	.scan-qrcode
+		position fixed
+		bottom 140Px
+		right 40Px
+		border 1Px solid #000
+		padding 5Px
+		background #ffffff
+		img
+			display block
+			width 100%
+			max-width 100%
+		h3
+			font-size 26Px
+			color #0d0d0d
+			text-align center
+			line-height 36Px
